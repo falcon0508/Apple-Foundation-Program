@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="Altrone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboard1" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TGL-RA-joO">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommend Game " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwZ-rT-Qo9">
+                    <rect key="frame" x="40" y="351" width="334" height="32.5"/>
+                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We recommending you game based on you daily routine" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-kX-fmX">
+                    <rect key="frame" x="30" y="415" width="344" height="52"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TGL-RA-joO" secondAttribute="trailing" id="8Oa-Hp-4Vt"/>
+                <constraint firstItem="TGL-RA-joO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="95i-kA-Hak"/>
+                <constraint firstItem="xwZ-rT-Qo9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="307" id="Im3-8B-KOr"/>
+                <constraint firstAttribute="bottom" secondItem="TGL-RA-joO" secondAttribute="bottom" id="Jit-8A-3Y1"/>
+                <constraint firstItem="TGL-RA-joO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KPg-30-Jve"/>
+                <constraint firstItem="BeC-kX-fmX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="MfR-UO-l91"/>
+                <constraint firstItem="TGL-RA-joO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fPQ-Ur-7qa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xwZ-rT-Qo9" secondAttribute="trailing" constant="40" id="fwf-KZ-O8A"/>
+                <constraint firstItem="TGL-RA-joO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g3g-T6-rwh"/>
+                <constraint firstItem="BeC-kX-fmX" firstAttribute="top" secondItem="xwZ-rT-Qo9" secondAttribute="bottom" constant="31.5" id="kkc-ri-FTM"/>
+                <constraint firstItem="xwZ-rT-Qo9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mYV-rp-oFw"/>
+                <constraint firstItem="xwZ-rT-Qo9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="40" id="qQi-gf-GQK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BeC-kX-fmX" secondAttribute="trailing" constant="40" id="xVo-sY-Off"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="DescSlide" destination="BeC-kX-fmX" id="aKG-zD-P80"/>
+                <outlet property="ImageSlide" destination="TGL-RA-joO" id="OJA-lI-FUf"/>
+                <outlet property="TitleSlide" destination="xwZ-rT-Qo9" id="xgB-H5-OPw"/>
+            </connections>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="onboard1" width="2268" height="4912"/>
+    </resources>
+</document>
